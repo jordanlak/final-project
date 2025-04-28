@@ -2,55 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>HelpHub - Charities</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charities Page</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <button class="button">Click Me</button>
-  <script src="script.js"></script>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <h1>Supporting Our Community</h1>
+      <p>Make a Difference with Us</p>
+      <a href="#volunteer" class="cta-button">Get Involved</a>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
-</body>
-  <header>
-    <h1>HelpHub</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="charities.html">Charities</a>
-    </nav>
-  </header>
+  <!-- About Us Section -->
+  <section id="about-us">
+    <div class="container">
+      <h2>Who We Are</h2>
+      <p>Our charity is dedicated to making the world a better place. We focus on causes such as education, health, and poverty alleviation. Through donations and volunteer work, we strive to make a lasting impact.</p>
+    </div>
+  </section>
 
-  <main>
-    <section>
-      <h2>Find a Charity</h2>
-      <input type="text" placeholder="Search for a charity..." class="search-input">
-    </section>
+  <!-- How You Can Help Section -->
+  <section id="how-you-can-help">
+    <div class="container">
+      <h2>How You Can Help</h2>
+      <p>Get involved by donating, volunteering, or spreading the word. Your support helps us continue our mission.</p>
+      <a href="#donate" class="cta-button">Donate Now</a>
+    </div>
+  </section>
 
-    <section class="charity-list">
-      <div class="charity-card">
-        <img src="charity1.jpg" alt="Charity 1 Image" width="200">
-        <h3>Family Feeder</h3>
-        <p>Helping families in need.</p>
-        <a href="charity_profile.html"><button>View Profile</button></a>
-      </div>
-      <div class="charity-card">
-        <img src="charity2.jpg" alt="Charity 2 Image" width="200">
-        <h3>Home Locator</h3>
-        <p>Protecting the environment.</p>
-        <a href="charity_profile.html"><button>View Profile</button></a>
-      </div>
-      <div class="charity-card">
-        <img src="charity3.jpg" alt="Charity 3 Image" width="200">
-        <h3>Medical Needs</h3>
-        <p>Supporting education for all.</p>
-        <a href="charity_profile.html"><button>View Profile</button></a>
-      </div>
-    </section>
-  </main>
+  <!-- Volunteer Page Section -->
+  <section id="volunteer">
+    <div class="container">
+      <h2>Become a Volunteer</h2>
+      <p>Volunteers are the backbone of our charity. Join us and make a tangible difference in the lives of others. Fill out the form below to sign up!</p>
+      
+      <form action="/submit-volunteer-form" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
 
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="interest">Areas of Interest</label>
+        <select id="interest" name="interest" required>
+          <option value="event-help">Event Assistance</option>
+          <option value="admin-support">Administrative Support</option>
+          <option value="fieldwork">Fieldwork</option>
+          <option value="fundraising">Fundraising</option>
+        </select>
+
+        <label for="availability">Availability</label>
+        <input type="text" id="availability" name="availability" placeholder="e.g., Weekends, Evenings">
+
+        <label for="message">Additional Information</label>
+        <textarea id="message" name="message" placeholder="Any other information you'd like us to know"></textarea>
+
+        <button type="submit" class="cta-button">Sign Up</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <div class="container">
+      <h2>What Volunteers Are Saying</h2>
+      <p>"Volunteering with this charity changed my life. It's rewarding and impactful!" - John Doe</p>
+      <p>"A fantastic organization to work with. Every day felt like I was making a difference." - Jane Smith</p>
+    </div>
+  </section>
+
+  <!-- Upcoming Events Section -->
+  <section id="events">
+    <div class="container">
+      <h2>Upcoming Volunteer Events</h2>
+      <ul>
+        <li>
+          <h3>Charity Run - June 10, 2025</h3>
+          <p>Help us raise funds by joining our annual charity run!</p>
+          <a href="#volunteer" class="cta-button">Sign Up</a>
+        </li>
+        <li>
+          <h3>Food Drive - July 5, 2025</h3>
+          <p>Join us in collecting food donations for local families in need.</p>
+          <a href="#volunteer" class="cta-button">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact-us">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p>If you have any questions or would like to learn more, feel free to contact us!</p>
+      <a href="mailto:contact@charity.org" class="cta-button">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>Contact Us | Terms of Service</p>
+    <div class="container">
+      <p>&copy; 2025 Charity Organization. All Rights Reserved.</p>
+    </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
