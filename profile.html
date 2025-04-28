@@ -18,14 +18,15 @@
   <main>
     <section class="profile">
       <h2>Charity Name</h2>
-      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.thelifeyoucansave.org%2Fblog%2F9-positive-effects-of-donating-money-to-charity%2F&psig=AOvVaw1idO_UrQihS8Xlcb4MKuki&ust=1745890161913000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCPCO1YDK-YwDFQAAAAAdAAAAABAE" width="400">
+      <!-- Update the image source to a direct URL -->
+      <img src="https://example.com/charity-image.jpg" alt="Charity Image" width="400">
       <p><strong>Description:</strong> This charity works to provide essential services to local communities and families in need.</p>
       <p><strong>Address:</strong> 123 Charity Street, Goodwill City</p>
     </section>
 
     <section class="volunteer-form">
       <h3>Volunteer Now</h3>
-      <form>
+      <form action="submit-volunteer-form.php" method="POST">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" required><br><br>
 
@@ -47,3 +48,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
