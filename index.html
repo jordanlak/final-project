@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HelpHub - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>HelpHub</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="charities.html">Charities</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Connect. Volunteer. Make a Difference.</h2>
+      <p>HelpHub connects volunteers with local charities.</p>
+      <a href="charities.html">
+        <button>Find Charities</button>
+      </a>
+    </section>
+
+    <section>
+      <h3>How it Works</h3>
+      <div class="steps">
+        <p>Browse Charities</p>
+        <p>Pick One</p>
+        <p>Volunteer</p>
+      </div>
+    </section>
+
+    <!-- New: Latest Humanitarian Reports -->
+    <section id="news-section">
+      <h2>Latest Humanitarian Reports</h2>
+
+      <div id="loading">
+        <div class="spinner"></div>
+        <p>Loading latest news...</p>
+      </div>
+
+      <div id="reports" style="display: none;"></div>
+      <div id="error" class="error"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact Us | Terms of Service</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
