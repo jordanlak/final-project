@@ -31,9 +31,4 @@ async function fetchReports() {
     loadingDiv.style.display = 'none';
     reportsDiv.style.display = 'block';
 
-  } catch (err) {
-    console.error('Error fetching reports:', err);
-    loadingDiv.style.display = 'none';
-    errorDiv.textContent = 'Sorry, we can’t load the latest news right now. Please try again later.';
-  }
 }
